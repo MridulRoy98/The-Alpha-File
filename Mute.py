@@ -68,6 +68,8 @@ def encrypt(listOfFiles, key):
     
     # Converting the key to a Fernet object
     f = Fernet(key)
+    
+    #looping through all the files in the same directory
     for i in listOfFiles:
         with open(i, 'rb') as file:
             realData = file.read()
@@ -81,6 +83,8 @@ def decrypt(readFiles, key):
 
     # Converting the key to a Fernet object
     f = Fernet(key)
+    
+    #Looping through all the encrypted files
     for i in readFiles:
         try:
             with open(i, 'rb') as file:
