@@ -104,7 +104,7 @@ if __name__ == '__main__':
     
     key = b'enBE2eZ5_y1lUInRug7cByWqsITx1L2p6f20PWEQg7g='
 
-    # Getting the list of files in the directory
+    # Getting the list of files in the directory.
     listOfFiles = filesToJam()
     readFiles = readFilePaths(directory_for_pickle)
 
